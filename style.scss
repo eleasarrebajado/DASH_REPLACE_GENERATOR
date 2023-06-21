@@ -1,0 +1,130 @@
+body{
+    background-color: #333333;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0; padding: 0;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    
+    
+    main{
+        max-width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex; align-items: center; justify-content: center; flex-direction: column;
+       
+        .copyPopup{
+            display: flex; align-items: center; justify-content: center;
+            gap: 1rem;
+            margin-top: -43rem;
+            padding: 0 0.6rem;
+            border-radius: 0.4rem;
+            text-align: center;
+            box-shadow: 2px 2px 5px black;
+            background-color: green;
+            position: absolute;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+
+            p{
+                color: #ffff;
+            }
+
+            span{
+                font-weight: bold;
+                color: #000000;
+            }
+        }
+
+        .copyPopupAdd{
+            display: flex; align-items: center; justify-content: center;
+            gap: 1rem;
+            margin-top: -29rem;
+            padding: 0 0.6rem;
+            border-radius: 0.4rem;
+            text-align: center;
+            box-shadow: 2px 2px 5px black;
+            background-color: #27c200;
+            position: absolute;
+            z-index: 1000;
+            opacity: 1;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .output-box{
+            max-width: 34rem;
+            text-align: center;
+            word-break: break;
+            padding: 1rem;
+            gap: 1rem;
+            border-bottom: 0.1rem solid #ffffff;
+            margin-bottom: 1rem;
+            display: flex; align-items: center; justify-content: center; flex-direction: row; flex-direction: column;
+            p{
+                font-size: 1.3rem;
+                color: white;
+            }
+            span{
+                font-weight: bold;
+                color: #ffa500;
+            }
+        }
+        
+       section{
+           width: 20rem;
+        //    height: 27rem;
+           padding: 2rem;
+           border-radius: 1rem;
+           background-color: black;
+
+            form{
+                display: flex; flex-direction: column;
+
+                label{
+                    margin-bottom: 0.7rem;
+                    font-size: 0.8rem;
+                    font-family: arial;
+                    color: #ffff;
+                }
+
+                input[type=text]{
+                    padding: 0.6rem;
+                    border-radius: 0.4rem;
+                    text-align: center;
+                    font-size: 1rem;
+                    border: none; outline: none;
+                    margin-bottom: 1rem;
+                }
+
+                .submit-container{
+                    display: flex; flex-direction: row; align-items: center; justify-content: center;
+                    padding: 12px;
+                    gap: 2rem;
+
+                    input[type=submit]{
+                        width: 7rem;
+                        padding: 0.6rem;
+                        cursor: pointer;
+                        background-color: #ff9100;
+                        color: #ffff;
+                        border: none; outline: none;
+                        border-radius: 0.3rem;
+                        
+                        &:hover{
+                            background-color: #e07f00;
+                            transition: all 0.8s;
+                        }
+                    }
+
+                    input[type=submit]:last-child{
+                        background-color: #3d3d3d;
+                        &:hover{
+                            background-color: #333333;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
