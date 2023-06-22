@@ -1,13 +1,22 @@
 
 let btn = document.querySelector("#submit");
-let para = document.querySelector(".copyText");
+var para = document.querySelector(".copyText");
+let loader = document.querySelector(".box-generate");
 
 btn.addEventListener("click", (event)=>{
     event.preventDefault();
     let inputvalue = document.querySelector("#text-converter").value;
     let dash = inputvalue.replace(/[\s.,_]+/g, '-').toLowerCase();
     para.innerHTML = dash;
+    para.style.display = "none";
+    loader.style.display="block";
+    setTimeout(()=>{
+        loader.style.display = 'none';
+        para.style.display = 'block';
+    }, 600);
 });
+
+
 
 // this is another division ==========================
 

@@ -60,6 +60,7 @@ body main .copyPopupAdd {
 body main .output-box {
   max-width: 34rem;
   text-align: center;
+  position: relative;
   word-break: break;
   padding: 1rem;
   gap: 1rem;
@@ -71,6 +72,24 @@ body main .output-box {
   flex-direction: row;
   flex-direction: column;
 }
+body main .output-box .box-generate {
+  width: 20rem;
+  top: -9rem;
+  position: absolute;
+  display: none;
+  z-index: 1000;
+}
+body main .output-box .box-generate img {
+  width: 100%;
+  height: auto;
+}
+body main .output-box .load {
+  width: 100%;
+  top: -4rem;
+  position: absolute;
+  display: none;
+  display: block;
+}
 body main .output-box p {
   font-size: 1.3rem;
   color: white;
@@ -78,6 +97,9 @@ body main .output-box p {
 body main .output-box span {
   font-weight: bold;
   color: #ffa500;
+}
+body main .output-box .copyText {
+  display: none;
 }
 body main section {
   width: 20rem;

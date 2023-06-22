@@ -54,12 +54,36 @@ body{
         .output-box{
             max-width: 34rem;
             text-align: center;
+            position: relative;
             word-break: break;
             padding: 1rem;
             gap: 1rem;
             border-bottom: 0.1rem solid #ffffff;
             margin-bottom: 1rem;
             display: flex; align-items: center; justify-content: center; flex-direction: row; flex-direction: column;
+            
+            .box-generate{
+                width: 20rem;
+                top: -9rem;
+                position: absolute;
+                display: none;
+                z-index: 1000;
+                
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            
+            .load{
+                width: 100%;
+                top: -4rem;
+                position: absolute;
+                display: none;
+                display: block;
+            }
+
+            
             p{
                 font-size: 1.3rem;
                 color: white;
@@ -67,6 +91,10 @@ body{
             span{
                 font-weight: bold;
                 color: #ffa500;
+            }
+
+            .copyText{
+                display: none;
             }
         }
         

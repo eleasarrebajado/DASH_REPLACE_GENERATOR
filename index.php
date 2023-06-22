@@ -13,6 +13,10 @@
             <span>COPY!</span><p class="sample">--------!</p>
         </div>
         <div class="output-box">
+                <div class="box-generate">
+                    <img src="images/loading.gif" alt="loader">
+                </div>
+
             <p class="copyText">this-is-your-converted-txt-goes-here :)</p>
             <span>*- CONVERTED -*</span>
         </div>
